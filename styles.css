@@ -497,7 +497,7 @@ nav ul li a.active {
     backdrop-filter: blur(10px);
     border-radius: 20px;
     overflow: hidden;
-    padding: 3rem 2rem; /* Reduced padding for mobile view */
+    padding: 5rem 2rem; /* Increased padding for mobile view */
 }
 
 .about-section::before {
@@ -915,5 +915,5 @@ main {
 }
 
 html, body {
-    scroll-padding-top: 80px; /* Adjust this value based on the height of the fixed header */
+    scroll-padding-top: 100px; /* Increased value for more space */
 }
