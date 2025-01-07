@@ -77,11 +77,3 @@ window.addEventListener('scroll', () => {
 document.addEventListener('DOMContentLoaded', () => {
     setTimeout(initializeSkillBars, 500);
 });
-
-// Toggle mobile navigation menu
-const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
-const mobileNav = document.querySelector('.mobile-nav');
-
-mobileMenuToggle.addEventListener('click', () => {
-    mobileNav.classList.toggle('active');
-});
