@@ -128,7 +128,7 @@ nav ul li a.active {
     border-radius: 20px;
     margin: 2rem auto;
     max-width: 1400px;
-    padding: 5rem 2rem;
+    padding: 3rem 2rem;
     border: 1px solid rgba(255, 255, 255, 0.1);
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
 }
@@ -365,7 +365,7 @@ nav ul li a.active {
 
 .cert-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .cert-icon {
@@ -865,6 +865,29 @@ footer {
     
     .about-image {
         margin: 0 auto;
+    }
+}
+
+main {
+    padding-top: 80px; /* Add padding to account for fixed header */
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        padding: 0.8rem;
+    }
+
+    nav ul li {
+        margin: 0 0.8rem;
+    }
+
+    main {
+        padding-top: 70px; /* Slightly reduced padding for mobile */
+    }
+
+    .section {
+        margin: 1rem;
+        padding: 2rem 1rem;
     }
 }
 
