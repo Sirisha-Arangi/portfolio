@@ -120,6 +120,41 @@ nav ul li a.active {
     color: var(--accent-color);
 }
 
+.mobile-menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.mobile-menu-toggle .bar {
+    height: 3px;
+    width: 25px;
+    background-color: var(--text-color);
+    margin: 4px 0;
+}
+
+.mobile-nav {
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    position: absolute;
+    top: 60px; /* Adjust based on header height */
+    left: 0;
+    background-color: var(--bg-dark);
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .desktop-nav {
+        display: none; /* Hide desktop nav on mobile */
+    }
+    .mobile-menu-toggle {
+        display: flex; /* Show toggle button on mobile */
+    }
+    .mobile-nav.active {
+        display: flex; /* Show mobile nav when active */
+    }
+}
+
 /* Section Styles */
 .section {
     position: relative;
@@ -888,6 +923,12 @@ main {
     .section {
         margin: 1rem;
         padding: 2rem 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        display: none; /* Hide the navigation bar on mobile */
     }
 }
 
